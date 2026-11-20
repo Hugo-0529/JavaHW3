@@ -1,0 +1,28 @@
+package ch5.p10.pc;   // 類別Car隸屬套件pc
+
+// 加上public才能被其他套件的類別使用
+public class Car
+{
+    private int num;
+    private double gas;
+
+    public Car()
+    {
+        num = 0;
+        gas = 0.0;
+        System.out.println("已生產了汽車");
+    }
+
+    public void setCar(int n, double g)
+    {
+        num = n;
+        gas = g;
+        System.out.println("將車號設為" + num + "汽油量設為" + gas);
+    }
+
+    public void show()
+    {
+        System.out.println("車號是" + num);
+        System.out.println("汽油量是" + gas);
+    }
+}
